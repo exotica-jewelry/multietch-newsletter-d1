@@ -1,3 +1,11 @@
+Forked from
+[rootwork/mjml-quickstart](https://github.com/rootwork/mjml-quickstart); the
+instructions below (minus the licensing additions at the bottom) are from the
+original project. See [README-multietch.md](README-multietch.md) for
+information and style guide specific to Multi-Etch.
+
+---
+
 A quick-start setup for those writing email code in [MJML](https://mjml.io/),
 the email templating language.
 
@@ -183,3 +191,9 @@ email-HTML darkness.
 # License
 
 GPLv3. See [LICENSE](LICENSE).
+
+Content of emails, including text, logos, and images, are
+[copyrighted](LICENSE-content) by [Multi-Etch, LLC](https://www.multietch.com)
+or their respective copyright-holders as noted in the newsletters.
+
+"Multi-Etch" is a registered trademark of Exotica Jewelry, Inc.
