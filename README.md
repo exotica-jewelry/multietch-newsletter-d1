@@ -35,7 +35,7 @@ choice. [See example.](https://rootwork.github.io/mjml-quickstart/_templates/ind
    * [Thanks](#thanks)
    * [License](#license)
 
-<!-- Added by: runner, at: Mon Apr  5 22:50:24 UTC 2021 -->
+<!-- Added by: runner, at: Mon Apr  5 23:05:28 UTC 2021 -->
 
 <!--te-->
 
