@@ -1,0 +1,51 @@
+<mj-wrapper mj-class="content">
+
+  <mj-section>
+  	<mj-column mj-class="column">
+      <mj-text mj-class="text">
+  		  <p>Thank you for purchasing Multi-Etch. I want to help you be successful with Multi-Etch by periodically sending you some tips by email.</p>
+        <p>If you’d rather not get these, however, no hard feelings: <a href="$[LI:UNSUBSCRIBE]$">You can unsubscribe</a>.</p>
+      </mj-text>
+      <mj-image mj-class="image" src="https://campaign-image.com/zohocampaigns/chris_multietch_jug_zc_v1_722626000000837016.jpg" alt="Chris Boothe, inventor of Multi-Etch." />
+      <mj-text mj-class="text">
+        <h2>How can we help you?</h2>
+        <p>As a new user of Multi-Etch, I’d like to invite you to ask any questions you might have about the process, safety, techniques, or anything else about Multi-Etch.</p>
+        <p><b>Really, ask away. Just reply to this email.</b></p>
+        <p>And be sure to add <b>info@multietch.com</b> to your contacts, so we don’t end up in your spam folder!</p>
+        <h2>Tips and tricks</h2>
+        <p><b>Step-by-step videos on using Multi-Etch for the first time:</b> If you haven’t seen these already, please <a href="https://www.multietch.com/multietch-how-to-videos-resources">check out our video series</a> to get you up and running in no time!</p>
+        <p><b>The Multi-Etch you just purchased is good for at least a year.</b> We’ve determined Multi-Etch in solution gets a little stronger, and works a little faster, the older it is. We’ve tested Multi-Etch in solution up to 15 months and it works great. Unmixed powder is good for at least eleven years.</p>
+        <p><b>Heated Multi-Etch usually works fastest, but room-temperature Multi-Etch can work too!</b> We’ve written <a href="https://www.multietch.com/room-temperature">a step-by-step guide to using Multi-Etch at room temperature</a> to help you along.</p>
+        <p><b>The equal-opportunity etchant:</b> We developed Multi-Etch especially for titanium, but it works on a list of <a href="https://www.multietch.com/etch-rates">23 types of metals</a>, and growing!</p>
+        <h2>Get tips specific to your needs</h2>
+        <p>I’d like to invite you to tell us a little bit about how you’re using Multi-Etch so that we can better serve you.</p>
+        <p><a href="#"><b>Share your industry and the metals in which you work.</b></a></p>
+        <p>For even more ideas and tips for you to use Multi-Etch successfully, be sure to follow us on social media!</p>
+  		</mj-text>
+  	</mj-column>
+  </mj-section>
+
+  <mj-section>
+    <mj-column>
+      <mj-social mj-class="social__nav">
+        <mj-social-element mj-class="social__icon" name="facebook-noshare" alt="Follow us on Facebook" href="https://www.facebook.com/multietch"></mj-social-element>
+        <mj-social-element mj-class="social__icon" name="instagram-noshare" alt="Follow us on Instagram" href="https://www.instagram.com/multietch/"></mj-social-element>
+        <mj-social-element mj-class="social__icon" name="youtube-noshare" alt="Watch our videos on YouTube" href="https://www.youtube.com/multietch"></mj-social-element>
+        <mj-social-element mj-class="social__icon" name="twitter-noshare" alt="Follow us on Twitter" href="https://twitter.com/multietch"></mj-social-element>
+        <mj-social-element mj-class="social__icon" name="linkedin-noshare" alt="Follow us on LinkedIn" href="https://www.linkedin.com/company/multietch"></mj-social-element>
+      </mj-social>
+    </mj-column>
+  </mj-section>
+
+  <mj-section>
+    <mj-column mj-class="column">
+      <mj-text mj-class="text">
+        <h2>Share your Multi-Etch photos</h2>
+        <p>In closing, we would love to see what you are making when using Multi-Etch! From simple colorations of dental implants to intricate anodizing on jewelry or wall art, we’d like to see it all, and, with your permission, we may include your photos on social media. Otherwise, all information you share with us is confidential.</p>
+        <p><b>You can reply to this email or send your photos to <a href="mailto:info@multietch.com">info@multietch.com</a>. Thank you!</b></p>
+        <p>Thank you again for joining the Multi-Etch community!</p>
+      </mj-text>
+    </mj-column>
+  </mj-section>
+
+</mj-wrapper>
