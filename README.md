@@ -1,96 +1,185 @@
-Periodic newsletters sent out from those who sign up at
-[MultiEtch.com](https://www.multietch.com).
+A quick-start setup for those writing email code in [MJML](https://mjml.io/),
+the email templating language.
 
-![Multi-Etch logo](/_templates/images/multietch.png)
+The templates included are
+[valid](https://mjml.io/documentation/#validating-mjml) under
+[MJML version 4](https://github.com/mjmlio/mjml/releases).
 
-Written in MJML and processed into ugly email code for importing into senders.
+One `index.html` file will be rendered, ready to import into your emailer of
+choice. [See example.](https://rootwork.github.io/mjml-quickstart/_templates/index.html)
 
-See [the usage file](USAGE.md) for instructions on using.
+<!-- The following section, from "ts" to "te", is an automatically-generated
+  table of contents, updated whenever this file changes. Do not edit within
+  this section. -->
 
-# Style guide
+<!--ts-->
+   * [Overview](#overview)
+   * [Setup](#setup)
+      * [If you have Sublime Text 3](#if-you-have-sublime-text-3)
+   * [Usage](#usage)
+      * [Creating a new design](#creating-a-new-design)
+         * [Sublime Text 3 users](#sublime-text-3-users)
+      * [Creating a new email from an existing design](#creating-a-new-email-from-an-existing-design)
+      * [Rendering the email for production](#rendering-the-email-for-production)
+         * [Sublime Text 3 users](#sublime-text-3-users-1)
+   * [Notes on project structure](#notes-on-project-structure)
+   * [Known issues](#known-issues)
+   * [Thanks](#thanks)
+   * [License](#license)
 
-* Logo is above.
-* Brand purple is `#46175b`.
-* Font stack uses [Google Fonts' Hind](https://fonts.google.com/specimen/Hind)
-followed by system fonts with emoji support,
-[copied from GitHub](https://markdotto.com/2018/02/07/github-system-fonts/#the-stack):
-`Hind, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`
-* In-text links should always be underlined. Exceptions are only for obvious
-menu items (i.e. not "in-text") or linked images/graphics.
-* Link-hover/active/focus states should only be used for enhancement, as not all
-email clients will see them.
-* Prominent links should appear as buttons, set off by themselves, rather than
-(only) links within paragraphs.
-* All non-decorative images should have alt text.
-* Images should be sized at twice their HTML-displayed width, for
-high-res/retina display.
-* Images should be pleasing at full-width. They can be displayed in columns at
-desktop widths, but will still be full-width at smaller screen sizes.
-* If image floats are used, it should be made clear that only some email
-recipients will see them, and the text/image layout should be readable even if
-the image float is disabled.
-* Buttons should be of the form:
-`<mj-button mj-class="button" css-class="button" href="#" title="TITLE">TEXT</mj-button>`
-or:
-`<mj-button mj-class="button button--ghost" css-class="button button--ghost" href="#" title="TITLE">TEXT</mj-button>`
-The CSS classes are necessary for styling of the link elements.
+<!-- Added by: runner, at: Mon Apr  5 22:49:54 UTC 2021 -->
 
-# Zoho settings for a standard newsletter
+<!--te-->
 
-* The merge tag for the first name is `$[FNAME|Multi-Etch User|Multi-Etch User]$`
-* Campaign title should be in the form `2021-01-31 Newsletter`
-* Copy subject from `title.mjml`.
-* Copy preheader from `preview.mjml`.
-* Sender (same for all) is `Chris, Multi-Etch Answer Man`
-* From address is `info@`
-* Click "Show reply-to address details" and choose "Reply Tracking"
-* Recipients is the newsletter list
-* Choose "HTML Editor" (bottom row) for entering the content
-* Choose the image icon in the toolbar and upload all necessary images. For each
-image, uncheck "Wrap text around image" and leave all other settings at default.
-The images will appear in the area below; leave them there and we'll take care
-of them in the next step.
-* Choose the `</>` icon in the toolbar. Under some standard HTML you'll see the
-code for the images you inserted. Copy these into a temporary file, then extract
-the actual URLs for the images and insert them into the MJML files. Rebuild the
-`index.html` file. (Whew!)
-* Now copy the generated `index.html` into the code window you've already
-opened, replacing everything that's there.
-* At the top, click "Save Changes" and then "Preview and Test".
-* Above the content display, click "Add Preheader". Copy the text from
-`preview.mjml` and paste it here. (Why Zoho makes us do this twice we do not
-know).
-* If the content-editing screen doesn't close automatically, click "Save and
-Next".
-* To the right of the content preview, click "Edit plain text".
-* Zoho will have auto-generated a plain-text version of the newsletter. You'll
-want to clean this up, probably in a separate text editor window, and then paste
-it back. Don't worry about preheader text in the plain-text version; just start
-with "Dear...". (Remember Zoho merge tags like first name _do_ work in the
-plain-text versions, so leave those in place.)
-* Also to the right of the content preview, make sure the "Header Footer Theme"
-is set to "None (No Header and Footer)". If it's not, click "change theme" to
-set it correctly. We include the header and footer ourselves.
-* If you want to set up custom scoring for customers who click links, at the
-bottom of the screen, click "Show advanced options" and then create
-campaign-specific scoring rules.
-* Again to the right of the content preview, click "Send test email" and send
-yourself both HTML and plain text versions. You can send any number of these,
-for instance if you want to preview in different email accounts on different
-devices.
-* Finally, at the top of the screen you will probably need to send the campaign
-to Zoho to review -- this usually only takes a few moments. Take a break.
-* Once approved, schedule the campaign for "recipients' optimal open time."
+# Overview
 
-# Licenses
+If you're here, you are probably already familiar with MJML, but if not you
+should [read a little about it](https://documentation.mjml.io) first.
 
-Underlying code from
-[rootwork/mjml-quickstart](https://github.com/rootwork/mjml-quickstart) is
-[GPLv3](LICENSE-code).
+The structure of this is such you should use it to contain all of your email
+projects within a single design.
 
-Content of emails, including text, logos, and images, are
-[copyrighted](LICENSE-content) by [Multi-Etch, LLC](https://www.multietch.com)
-or their respective copyright-holders as noted in the newsletters.
+For instance, if you're a freelancer, you'd fork this project once each for
+Company A and Company B, and place each individual email as a subdirectory
+inside the company directories. For more information, see the Notes section at
+the bottom.
 
-"Multi-Etch" is a registered trademark of Exotica Jewelry, Inc.
+We take advantage of MJML's `mj-class` option to gather all of the styles in one
+place, and let MJML take care of all the inlining.
+
+The build scripts assume you're running Bash or ZSH in some form. There are some
+extra tools for Sublime Text 3 users.
+
+# Setup
+
+* Go to the [Releases](https://github.com/rootwork/mjml-quickstart/releases)
+page and grab the most recent stable version. Alternatively, you can simply fork
+this repo and clone it locally.
+* Remove the `.github` folder if you don't want to use
+[GitHub Actions](https://docs.github.com/en/actions).
+* Install [mjml](https://www.npmjs.com/package/mjml) globally using node:
+`npm install -g mjml`
+
+## If you have Sublime Text 3
+
+* Copy the Sublime build file into your configuration:
+  * Linux: `cp MJML.sublime-build ~/.config/sublime-text-3/Packages/User`
+  * Mac: `cp MJML.sublime-build ~/Library/Application Support/Sublime Text 3/Packages/User`
+  * Windows: `cp MJML.sublime-build %APPDATA%\Sublime Text 3/Packages/User`
+* Open Sublime Text
+  * Install the Package
+  [MJML-syntax](https://packagecontrol.io/packages/MJML-syntax).
+
+# Usage
+
+## Creating a new design
+
+Run setup above, and rename your fork of the repo with your design or company's
+name.
+
+Edit the contents of `_templates` to fit your design that will be in place for
+each email.
+
+* `index.mjml`: This file includes all the component files. You shouldn't
+normally need to edit this unless you are re-ordering the structure or changing
+the `lang` value.
+* `content`: This folder holds files that will *always* change in each email
+-- the title, preview text, header/hero area and main body.
+* `structure`: This folder holds files that may *sometimes* change in each
+email -- top and bottom navigation menus, social media links, and the footer
+area.
+* `style`: This folder contains the CSS attributes that, ideally, *will not*
+change from project to project.
+
+In your console, run `./mjml-watch.sh`. This will watch for any changes in any
+`index.mjml` files (including any partials referenced with `<mj-include>`), and
+re-render `index.html` in default (unminified) form. You can leave your browser
+open to this page.
+
+By default,
+[watch output includes MJML depreciation notices](https://github.com/mjmlio/mjml/issues/2205);
+if these bother you, you can turn off errors by running
+`./mjml-watch.sh &> /dev/null` instead, but this means you won't get rebuild
+notifications in your console either.
+
+### Sublime Text 3 users
+
+Sublime should auto-detect the build-system based on your files, but you can
+check by going to Tools > Build System > MJML
+
+Be sure that in the Tools menu, "Save All on Build" is checked (which is the
+default).
+
+## Creating a new email from an existing design
+
+1. Once you have a standard design, copy the `_templates` directory and give it
+a name for a specific email.
+2. Edit the `.mjml` files as necessary for this individual email.
+3. Use the build or watch options above to recompile into an `index.html` file
+you can import into your email sender of choice.
+
+## Rendering the email for production
+
+In your console, run `./mjml-build.sh`. This will render `index.html`
+[in minified form](https://github.com/mjmlio/mjml/blob/master/packages/mjml-cli/README.md#minify-and-beautify-the-output-html).
+
+Images can be included locally while you're drafting the email, but MJML doesn't
+do anything magical in terms of hosting these images -- you'll still have to
+upload them somewhere and change the references to the hosted images.
+
+Once the production email is rendered, you can:
+
+* import directly (as HTML) into your emailer of choice
+* share the `index.html` file with colleagues
+* upload the file as part of a repo and use something like
+[GitHub Pages](https://pages.github.com/) to view/share it in a browser; for instance
+[here's the rendered file](https://rootwork.github.io/mjml-quickstart/_templates/index.html)
+from the sample templates
+
+### Sublime Text 3 users
+
+Press <kbd>Ctrl-B</kbd> to run the build script.
+
+# Notes on project structure
+
+This project is designed to become your overarching directory in which
+individual email projects with a single design are kept in subdirectories. The
+script included looks for `index.mjml` files in the current directory and any
+first-order subdirectories, and renders them in place to corresponding
+`index.html` files.
+
+Generally this isn't a huge problem: Should re-rendered older projects change
+somehow (for instance through new versions of MJML itself), you can simply
+choose to not commit the changed files, because you're using version-control.
+
+However, it may introduce issues of scale, if you have a directory with hundreds
+of email projects all getting re-rendered on `watch` or `build`.
+
+If that worries you or is becoming an issue, just use a separate directory for
+each project, re-forking this project for every new one.
+
+# Known issues
+
+* Currently comments are not being stripped from minified files
+[due to a bug in mjml-cli](https://github.com/mjmlio/mjml/issues/2206#issuecomment-797352320).
+The build script does specify that comments should be stripped, so once MJML
+fixes this the issue will resolve itself.
+
+* The `signoff.mjml` template, used for a signature or closing with a person's
+image, uses a regular `<img>` tag with inline styles. This will be moved to a
+custom component in a future release.
+
+# Thanks
+
+Work funded in part by [Multi-Etch, LLC](https://www.multietch.com/).
+
+Built with original inspiration from
+[dalefish/mjml-boilerplate-win](https://github.com/dalefish/mjml-boilerplate-win).
+
+Thanks, of course, to the folks working on
+[mjmlio/mjml](https://github.com/mjmlio/mjml). You are the light in the terrible
+email-HTML darkness.
+
+# License
+
+GPLv3. See [LICENSE](LICENSE).
