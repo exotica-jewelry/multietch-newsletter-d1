@@ -1,0 +1,22 @@
+<mj-wrapper mj-class="content">
+
+  <mj-section>
+  	<mj-column mj-class="column">
+      <mj-text mj-class="text">
+  		  <p>Happy Spring from the Multi-Etch Answer Man!</p>
+        <p>We've been experimenting with Multi-Etch and have some new data to show for our efforts. We tested heated as well as room temperature Multi-Etch on additional grades of titanium and on NiTiNol and retested many metals we did in the past.</p>
+        <p><b>If your procedures are working for you, there's no need to change anything.</b></p>
+        <p>We did find that room-temperature, double strength Multi-Etch, after having been activated by heating it one time, etches more quickly than we thought. When prepping for anodization or welding, we recommend starting at two minutes instead of ten.</p>
+        <p>We also measured metal removal rates with more accurate equipment and have improved data as a result.</p>
+        <p>View our comprehensive <a href="https://www.multietch.com/etching-titanium-multietch">etch rates for titanium</a> or our index of <a href="https://www.multietch.com/etch-rates">etch rates for other metals</a> — these also include information for using Multi-Etch as a cleaner or to remove debris from some metals, and to remove anodized colors on reactive metals.</p>
+      </mj-text>
+      <mj-image mj-class="image" src="https://campaign-image.com/zohocampaigns/titanium_strips_multietch_zc_v2_722626000000959071.jpg" alt="Strips of anodized titanium using room-temperature Multi-Etch." />
+      <mj-text mj-class="text">
+        <p>Above, you can see the results of testing grade 4 titanium strips for anodizing and welding prep in room-temperature Multi-Etch. We etched for varying amounts of time, from 30 seconds to 5 minutes. You’ll notice that the high voltage pinks look great!</p>
+        <p>We hope this information is helpful to you, and again want to let you know that if your current methods are working there is no reason to change.</p>
+        <p>Keep on etching!</p>
+  		</mj-text>
+  	</mj-column>
+  </mj-section>
+
+</mj-wrapper>

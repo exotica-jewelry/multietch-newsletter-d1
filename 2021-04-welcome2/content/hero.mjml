@@ -1,0 +1,11 @@
+<mj-hero mj-class="hero"
+  height="425px"
+  background-height="425px"
+  background-url="https://campaign-image.com/zohocampaigns/titanium_strips_multietch_zc_v2_722626000000959071.jpg"
+>
+</mj-hero>
+<mj-section>
+  <mj-column>
+    <mj-divider mj-class="hero-border" />
+  </mj-column>
+</mj-section>
