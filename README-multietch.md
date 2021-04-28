@@ -1,11 +1,11 @@
-Periodic newsletters sent out from those who sign up at
+Periodic emails to customers and subscribers who sign up at
 [MultiEtch.com](https://www.multietch.com).
 
 ![Multi-Etch logo](/_templates/images/multietch.png)
 
 Written in MJML and processed into ugly email code for importing into senders.
 
-See [the usage file](USAGE.md) for instructions on using.
+See [the main readme file](README.md) for instructions on using.
 
 # Style guide
 
@@ -36,7 +36,11 @@ or:
 `<mj-button mj-class="button button--ghost" css-class="button button--ghost" href="#" title="TITLE">TEXT</mj-button>`
 The CSS classes are necessary for styling of the link elements.
 
-# Zoho settings for a standard newsletter
+# Zoho settings for a standard email
+
+This guides you through creating an email campaign from scratch; if instead
+you've copied or cloned an existing campaign, some of the following will already
+be set up.
 
 * The merge tag for the first name is `$[FNAME|Multi-Etch User|Multi-Etch User]$`
 * Campaign title should be in the form `2021-01-31 Newsletter`
@@ -44,17 +48,20 @@ The CSS classes are necessary for styling of the link elements.
 * Copy preheader from `preview.mjml`.
 * Sender (same for all) is `Chris, Multi-Etch Answer Man`
 * From address is `info@`
-* Click "Show reply-to address details" and choose "Reply Tracking"
-* Recipients is the newsletter list
-* Choose "HTML Editor" (bottom row) for entering the content
-* Choose the image icon in the toolbar and upload all necessary images. For each
-image, uncheck "Wrap text around image" and leave all other settings at default.
-The images will appear in the area below; leave them there and we'll take care
-of them in the next step.
+* Click "Show reply-to address details" and choose "Reply Tracking".
+* If offered, check the box for including a customer's email in the "To" field.
+* Recipients will be the appropriate mailing list for the email. If this is a
+newsletter **be sure to exclude** people in the "Welcome" email series.
+* To create the content, choose "HTML Editor" (on the bottom row of choices). If
+content already exists (from cloning an existing campaign), edit the content,
+select everything (ctrl-A) in the editor and delete it.
+* Choose the image icon in the toolbar and upload all necessary images. You can
+leave all the settings as default. The images will appear in the area below;
+leave them there and we'll take care of them in the next step.
 * Choose the `</>` icon in the toolbar. Under some standard HTML you'll see the
-code for the images you inserted. Copy these into a temporary file, then extract
-the actual URLs for the images and insert them into the MJML files. Rebuild the
-`index.html` file. (Whew!)
+code for the images you inserted. Find the URL for each image, which will start
+with `https://campaign-image.com/zohocampaigns/`, and copy each one into the
+appropriate place in the MJML files. Rebuild the `index.html` file. (Whew!)
 * Now copy the generated `index.html` into the code window you've already
 opened, replacing everything that's there.
 * At the top, click "Save Changes" and then "Preview and Test".
@@ -79,6 +86,9 @@ campaign-specific scoring rules.
 yourself both HTML and plain text versions. You can send any number of these,
 for instance if you want to preview in different email accounts on different
 devices.
+* Double-check the plain-text email; sometimes the first time you enter the text
+version it doesn't "take" and you'll need to edit it again. This seems to be a
+bug in Zoho.
 * Finally, at the top of the screen you will probably need to send the campaign
 to Zoho to review -- this usually only takes a few moments. Take a break.
 * Once approved, schedule the campaign for "recipients' optimal open time."
