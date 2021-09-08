@@ -1,0 +1,13 @@
+<!-- For Retina display, width and height should be half the size of the image
+     in pixels. -->
+<mj-hero mj-class="hero"
+  height="334px"
+  background-height="334px"
+  background-url="https://campaign-image.com/zohocampaigns/multi_etch_student_demo_zc_v2_722626000001403150.jpg"
+>
+</mj-hero>
+<mj-section>
+  <mj-column>
+    <mj-divider mj-class="hero-border" />
+  </mj-column>
+</mj-section>

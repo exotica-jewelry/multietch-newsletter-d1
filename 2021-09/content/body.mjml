@@ -1,0 +1,18 @@
+<mj-wrapper mj-class="content">
+
+  <mj-section>
+  	<mj-column mj-class="column">
+      <mj-text mj-class="text">
+  		  <p>It's back to school time!</p>
+        <p>The photo above shows Chris Boothe explaining to middle school students the basics of titanium anodizing. Each participant could try their hand anodizing a strip of titanium, which they got to keep.</p>
+        <p>This was at the 2019 <a href="https://titanium.org">International Titanium Association</a> convention in Mobile, AL.</p>
+        <p><a href="https://www.youtube.com/watch?v=TDe03PKKAh8"><strong>Watch a video showing an overview of the Kids in Titanium program.</strong></a></p>
+        <p>The ITA has been hosting Kids in Titanium annually for several years. This year's convention will be virtual; next year is planned for Orlando, FL. <a href="https://titanium.org/page/TITANIUMCONFERENCES">Learn more about the International Titanium Association conference.</a></p>
+        <p>Each convention has demonstrators showing different features of titanium. Along with anodizing, demonstrations have included information about how titanium is made into a usable form, characteristics that make titanium unique, industries using titanium, and unusual things made of titanium: a violin, a drum set, gongs, and more.</p>
+        <p>We wholeheartedly endorse ITA and their support of STEM educational programs!</p>
+        <p><strong>Want to up your education on Multi-Etch? </strong><a href="https://www.multietch.com/multietch-how-to-videos-resources"><strong>Be sure to take a look at our step-by-step videos.</strong></p>
+  		</mj-text>
+  	</mj-column>
+  </mj-section>
+
+</mj-wrapper>
