@@ -1,5 +1,5 @@
 Forked from
-[rootwork/mjml-quickstart](https://github.com/rootwork/mjml-quickstart); the
+[premail/premail](https://github.com/premail/premail); the
 instructions below (minus the licensing additions at the bottom) are from the
 original project. See [README-multietch.md](README-multietch.md) for
 information and style guide specific to Multi-Etch.
@@ -14,7 +14,7 @@ The templates included are
 [MJML version 4](https://github.com/mjmlio/mjml/releases).
 
 One `index.html` file will be rendered, ready to import into your emailer of
-choice. [See example.](https://rootwork.github.io/mjml-quickstart/_templates/index.html)
+choice. [See example.](_templates/index.html)
 
 <!-- The following section, from "ts" to "te", is an automatically-generated
   table of contents, updated whenever this file changes. Do not edit within
@@ -60,7 +60,7 @@ extra tools for Sublime Text 3 users.
 
 # Setup
 
-* Go to the [Releases](https://github.com/rootwork/mjml-quickstart/releases)
+* Go to the [Releases](https://github.com/premail/premail/releases)
 page and grab the most recent stable version. Alternatively, you can simply fork
 this repo and clone it locally.
 * Remove the `.github` folder if you don't want to use
@@ -141,7 +141,7 @@ Once the production email is rendered, you can:
 * share the `index.html` file with colleagues
 * upload the file as part of a repo and use something like
 [GitHub Pages](https://pages.github.com/) to view/share it in a browser; for instance
-[here's the rendered file](https://rootwork.github.io/mjml-quickstart/_templates/index.html)
+[here's the rendered file](_templates/index.html)
 from the sample templates
 
 ### Sublime Text 3 users
