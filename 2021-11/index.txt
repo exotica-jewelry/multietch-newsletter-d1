@@ -1,0 +1,65 @@
+Dear $[FNAME|Multi-Etch User|Multi-Etch User]$,
+
+Here is an interesting method for an extractive coloring technique using Multi-Etch.
+
+Perhaps you’ve gone beyond that color you wanted when anodizing titanium or niobium, i.e., the voltage you applied was too high and the coloration needs correcting. You wanted a nice yellow but hit the pink fuchsia range above it.
+
+Rather than completely erasing the color, it is possible to Multi-Etch the anodized item and work backwards to the color you wanted. It takes some practice and skill working with this technique but it can produce the colors you're after.
+
+A quick demonstration:
+https://www.youtube.com/watch?v=_sbHEpNDlpw
+
+Use a test strip you’ve anodized and immerse it in heated Multi-Etch. You will observe the color work backwards through the lower order colors. For example, the fuchsia will turn to yellow and then to blue, etc.
+
+When you get to your target color, immediately remove the workpiece from the Multi-Etch bath and rinse it. Room temperature Multi-Etch can also be used for this but the changes will be slower.
+
+A SECOND METHOD WITH RE-ANODIZING
+
+Alternatively, you could go below the color range you’re after and then re-anodize to your target color instead of erasing completely and starting over. For example, maybe you wanted purple but went past that and got turquoise. You can etch back to yellow and then re-anodize to purple.
+
+Here's a demonstration of that:
+https://www.youtube.com/watch?v=mizQoyeSkps
+
+We know of some artists that use this extractive method routinely.
+
+PAINTING WITH MULTI-ETCH
+
+For more complex colorings, instead of dipping the whole piece, Multi-Etch can also be selectively applied with a sponge or paint brush. If you need to protect the surrounding areas, mask them with electroplaters tape, rubber cement, or nail polish.
+Using Multi-Etch to reverse-anodize while masking off areas
+
+In the piece below, tape has been used to mask off the middle prior to the use of Multi-Etch:
+https://images.squarespace-cdn.com/content/v1/5c17d54ada02bc9741cdfef6/f5a6dd37-37cd-42e2-9584-ab0d99204690/reverse-anodize.jpg
+
+Remember, always test a new technique with scrap until you get the hang of it.
+
+And keep in mind that until you remove your workpiece and rinse off the Multi-Etch, it will continue to change the color.
+
+Happy etching!
+
+Chris Boothe
+Multi-Etch Answer Man
+
+
+=====================
+
+Multi-Etch on Facebook: https://www.facebook.com/multietch
+Multi-Etch on Instagram: https://www.instagram.com/multietch
+Multi-Etch on YouTube: https://www.youtube.com/multietch
+Multi-Etch on Twitter: https://twitter.com/multietch
+Multi-Etch on LinkedIn: https://www.linkedin.com/company/multietch
+
+=====================
+
+
+View this email in your web browser
+$[LI:VIEWINBROWSER]$
+
+Unsubscribe from Multi-Etch emails
+$[LI:UNSUBSCRIBE]$
+
+View Multi-Etch's privacy policy
+$[LI:PRIVACY]$
+
+Multi-Etch, LLC
+$[HF:ORGADDRESS]$
+https://www.multietch.com
